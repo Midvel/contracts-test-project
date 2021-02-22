@@ -11,6 +11,7 @@
     "dev:lint": "npx eslint . && npx solhint contracts/**/*.sol",
     "dev:coverage": "npx truffle run coverage --network coverage --solcoverjs ./.solcover.js",
     "dev:contract-size": "npx truffle run contract-size",
+    "dev:docgen": "npx solidity-docgen -i ./contracts -o ./docs -t docgen",
     "postinstall": "npm run compile && npm run generate-abi"
   },
   "repository": {
