@@ -9,7 +9,7 @@
     "filter_paths": "@openzeppelin|interfaces|mock",
     "ignore_compile": true,
     "legacy_ast": false,
-    "solc": "0.8.6",
+    "solc": "0.8.7",
     "truffle_build_directory": "./build/contracts",
     "truffle_ignore_compile": true
 }
