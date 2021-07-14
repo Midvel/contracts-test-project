@@ -20,6 +20,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+coverage.json
 *.lcov
 docs
 
@@ -42,6 +43,8 @@ build
 # Dependency directories
 node_modules/
 jspm_packages/
+package-lock.json
+abi/IERC20Metadata.json
 
 # TypeScript v1 declaration files
 typings/
