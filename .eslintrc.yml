@@ -13,7 +13,7 @@ parserOptions:
 rules:
   indent:
     - error
-    - 2
+    - 4
     - SwitchCase: 1
       VariableDeclarator:
         var: 2
@@ -25,7 +25,7 @@ rules:
     - unix
   quotes:
     - error
-    - single
+    - double
   semi:
     - error
     - always
