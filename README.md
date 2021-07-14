@@ -7,12 +7,12 @@
 ## Prerequisites
 
 For development purposes, you will need `Node.js` and a package manager – `npm`. For the development, the following versions were used:
-- `Node.js` – v12.18.3
-- `npm` – 6.14.6
+- `Node.js` – v15.11.0
+- `npm` – 7.14.0
 
 ## Installation
 
-Run the command `$ npm install` to install all the dependencies specified in `package.json`.
+Run the command `$ npm install` to install all the dependencies specified in `package.json`, compile contracts, prepare abi and prepare husky hooks.
 
 ## Configuration
 
@@ -39,7 +39,11 @@ For the deployment process to be successfully performed, the `.env` file with fi
 
 ### Linters
 
-`$ npm run dev:lint` to run Solidity and JavaScript linters and check the code for stylistic bugs.
+`$ npm run dev:lint` to run Solidity and JavaScript linters and check the code for stylistic bugs.<br>
+`$ npm run dev:prettier-check` to run prettier for coding style check.<br>
+`$ npm run dev:prettier` to run prettier to fix coding style issues.<br>
+`$ npm run prettier:check` to run prettier for Solidity contracts coding style check.<br>
+`$ npm run prettier:fix` to run prettier to fix Solidity contracts coding style issues.<br>
 
 ### Tests coverage
 
@@ -53,6 +57,11 @@ Use `$ npm run dev:ganache` to start a local Ethereum network. Here it is used f
 
 Before running tests, a local node should be running. To do this simply run `$ npm run dev:ganache`. This will start the Ganache development network. After this, you can perform tests with `$ npm test` to run all tests from the `test/` directory.
 
+### Utils
+
+Package file contains commands for documentation generation, contracts size check and cjecking by Slither.<br>
+Slither installation is separated from the package. Follow instructions <a href="https://github.com/crytic/slither"  target="_blank">in the official repo</a>.
+
 ## *Production*
 
 ### Build
@@ -62,7 +71,3 @@ Use `$ npm run compile` to compile the source code (both smart-contracts and Jav
 ### Deploy
 Before proceeding with the deployment process, make sure you have read a [Configuration](#Configuration) section and set up the `.env` file.
 
-Run `$ npm run deploy` and follow the CLI instructions to deploy the smart-contracts. For now, the following Ethereum networks are supported:
-- Development (locally)
-- Kovan
-- Mainnet
