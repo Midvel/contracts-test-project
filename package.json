@@ -27,10 +27,10 @@
   "author": "CKO",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "4.2.0",
+    "@openzeppelin/contracts": "4.4.2",
     "@truffle/hdwallet-provider": "^1.4.1",
     "dotenv": "^10.0.0",
-    "truffle": "^5.4.0",
+    "truffle": "^5.4.30",
     "web3": "^1.4.0"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "mocha": "^9.0.2",
     "prettier": "^2.3.2",
     "prettier-plugin-solidity": "^1.0.0-beta.15",
-    "solc": "0.8.6",
+    "solc": "0.8.11",
     "solhint": "^3.3.6",
     "solidity-coverage": "^0.7.16",
     "solidity-docgen": "^0.5.13",

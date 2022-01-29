@@ -6,5 +6,5 @@ module.exports = {
         default_balance_ether: '10000000000000000000000000',
         total_accounts: 20
     },
-    skipFiles: ['test/MultiSigWalletMock.sol']
+    skipFiles: ['mocks']
   };
